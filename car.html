@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Bree+Serif&family=Bungee+Spice&family=Courgette&family=PT+Serif:ital,wght@1,700&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Turbo MOtors</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: border-box;
+    }
+    .navbar{
+        height: 60px;
+        background-color: #0f1111;
+        color: white;
+        display: flex;
+        align-items: center;
+
+
+    }
+    .nav-logo{
+        height:50px; 
+        width: 100px;
+    }
+    .logo{
+        background-image:url("28532.jpg") ;
+        height: 50px;
+        width: 100%;
+        background-size: cover;
+    }
+    .border{
+        border: 2px solid transparent;
+    }
+
+
+    .border:hover{
+        border: 1.5px solid white;
+    }
+    //*box2*//
+    .add-first{
+        color: #cccccc;
+        font-size: 0.8rem ;
+        margin-left: 15px;
+    }
+
+
+    .add-sec{
+        color: #;
+        font-size: 1rem;
+        margin-left: 3px;
+    
+    }
+
+
+    .add-icon{
+        display: flex;
+         align-items: center ;
+    }
+    .nav-address{
+        margin-left: 13px;
+    }
+
+
+    /** box 3**/
+    .nav-search{
+        margin-left: 200px;
+        display: flex;
+        background-color: pink; 
+        justify-content: space-evenly;
+        width: 620px;
+        height: 40px;
+        border-radius: 4px;
+    }
+
+
+    .search-select{
+        background-color: #f3f3f3;
+        width: 50px;
+        text-align: center;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border: none;
+    }
+    .search-input{
+        width: 100%;
+        font-size: 1rem;
+        border: none;
+        background-color: rgb(247, 247, 250);
+        text-align: center;
+
+
+    }
+    .search-icon{
+        width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(49, 49, 128);
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+
+    }
+    .add-icon2{
+        margin-left: 255px;
+    }
+    .add-sec{
+        margin-left: 15px;
+    }
+    .sign-in{
+        background-color: rgb(203, 203, 211);
+        text-align: center;
+        borderradius: 4px;
+        border: none;
+    }
+    .hero-section{
+        background-image: url("bugatti-chiron-pur-sport-1366x768_897585-mm-90.jpg");
+        background-size: cover;
+        height: 700px;
+        display: flex;
+       
+    }
+    .hero-message{
+        color: black;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.1rem;
+        width: 80%;
+        margin-left: 1000px;
+        margin-top: 90px;
+        font-family: 'PT Serif', serif;
+
+
+    }
+
+
+    /*shop*/
+    .shop-section{
+        display: flex;
+        justify-content: center;
+        background-color:#e2e7e6 ;
+    }
+    .box1{
+        border: 2px solid black;
+        height: 100px;
+        width: 23%;
+    
+    }
+    .box2{
+        border: 2px solid black;
+        height: 100px;
+        width: 23%;
+        background-color: white;
+      
+    }
+    
+    .box3{
+        border: 2px solid black;
+        height: 100px;
+        width: 23%;
+        background-color: white;
+       
+    }
+    .box-img{
+        height: 10px;
+    }
+    
+    .btn{
+        padding: 10px 22px;
+        background: #d90429;
+        color:whitesmoke;
+        font-weight: 400;
+    }
+    .heading{
+        text-align: center;
+
+
+    }
+    .heading span{
+        font-weight: 500;
+        color: #d90429;
+    }
+    .cars-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 2rem;
+
+
+    }
+    .cars-container .box{
+        flex: 1 1 17rem;
+        position: relative;
+        height: 200px;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+
+    }
+    .cars-container .box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+
+
+    }
+    .cars-container  .box  img:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .cars-container .box h2{
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        font-weight: 400;
+        font-size: 1rem;
+        background: whitesmoke;
+        padding: 8px;
+        border-radius: 0.5rem;
+
+
+    }
+    .cars-container .box:hover h2{
+        background:white ;
+        color: #d90429;
+
+
+    }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.5rem;
+
+
+    }
+    .about-img{
+        flex: 1 1 21rem;
+        border-radius: 4px;
+
+
+    }
+    .about-text{
+        flex: 1 1 21rem;
+
+
+    }
+    .about span{
+        font-weight: 500;
+        color: #d90429;
+
+
+    }
+    .about-text h2{
+        font-size: 1.7rem;
+    }
+    .parts-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 2rem;
+
+
+    }
+    .parts-container .box{
+        flex: 1 1 17rem;
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background: #f6f6f6;
+        border-radius: 0.5rem;
+
+
+    }
+    .parts-container .box img{
+        width: 100%;
+        height:150px ;
+        object-fit: contain;
+        object-position: center;
+        margin-bottom: 1rem;
+        display: flex;
+
+
+    }
+     .h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: underline;
+        text-align: center;
+        
+
+
+    }
+    .parts-container .box span{
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #d90429;
+        text-align: center;
+
+
+    }
+    .parts-container .box .btn{
+        max-width: 120px;
+    }
+    .parts-container .box .details{
+        display:flex;
+        align-items: center;
+        position: absolute;
+        bottom: 1.8rem;
+        right: 1rem;
+        font-size: 1rem;
+        color: #d90429;
+    }
+    .parts-container  .box .details:hover{
+        text-decoration: underline;
+    }
+
+
+
+
+    
+</style>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+                </div>
+                <div class="nav-address">
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p  class="add-sec">Maharashtra</p>
+                    </div>
+                
+                </div>
+                
+                <div class="nav-search">
+                    <select class="search-select">
+                        <option>All</option>
+                        <option>Hatchback</option>
+                        <option>Sedan</option>
+                        <option>SUV</option>
+                        <option>MUV</option>
+                        <option>Luxury</option>
+                    </select>
+                    <input placeholder="Search Car" class="search-input">
+                    <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+                <div class="add-icon2">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+
+                <div class="nav-address">
+                    <p class="add-first"></p> Hello, Sign in</p>
+                    <div class="add-icon">
+                        <i class="fa-regular fa-user"></i>
+                        <p  class="add-sec">Account<select class="sign-in">
+                            <option>Log in</option>
+                            <option>Sign in</option>
+                        </select></p>
+                    </div>
+                
+        </div>
+    </header>
+    <div class="hero-section">
+    <div class="hero-message">
+        Certified cars with <br>12-Months Warranty
+    </div>
+    </div>
+    <div class="shop-section">
+        <div class="box1">
+            <h2>New Car</h2>
+            <div class="box-img" style="background-image: url("kisspng-volkswagen-polo-gti-compact-car-volkswagen-crafter-volkswagen-png-free-download-5a77be44a28d39.3181119715177969326658.png");"></div>
+         
+        </div>
+        <div class="box2">
+            <h2>Sell & Buy Used Cars</h2>
+
+
+        </div>
+        <div class="box3"><H2>Services</H2></div>
+        
+        <div class="box4"></div>
+    </div>
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span>ALL CARS</span>
+            <h2>WE HAVE ALL TYPES OF CARS</h2>
+        </div>
+        <div class="cars-container container">
+            <div class="box">
+                <img src="kisspng-2017-hyundai-elantra-2018-hyundai-elantra-sedan-ca-hyundai-5abc2e0bf36553.489657481522281995997.png" alt="">
+                <h2>Hyundai</h2>
+            </div>
+            <div class="box">
+                <img src="kisspng-tata-motors-tata-safari-storme-car-india-5b1eff62397b94.9625774515287581142355.png" alt="">
+                <h2>TATA</h2>
+            </div>
+            <div class="box">
+                <img src="kisspng-mahindra-xuv500-mahindra-mahindra-car-sport-util-5af94c95e89091.5398185615262875099526.png" alt="">
+                <h2>Mahindra</h2>
+            </div>
+            <div class="box">
+                <img src="kisspng-2016-ford-mustang-2018-ford-mustang-2015-ford-must-ford-mustang-galpin-rocket-car-5a75599d5e4fd6.4548599315176400933863.png" alt="">
+                <h2>Ford</h2>
+            </div>
+            <div class="box">
+                <img src="kisspng-renault-kwid-car-renault-clio-sport-utility-vehicl-renault-5ab542aa8824b7.3918608515218285225577.png" alt="">
+                <h2>Renault</h2>
+               
+            </div>
+            
+        </div>
+    </section>
+    <br>  
+    <br> 
+    <section class="about container" id="about">
+        <div class="about-img">
+            <img src="car3.jpg" alt="">
+        </div>
+
+
+</body>
+</html>
